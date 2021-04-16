@@ -1,0 +1,12 @@
+.App {
+  margin: -8px;
+}
+
+.Layout {
+  display: flex;
+  font-family: sans-serif;
+  justify-content: center;
+  align-content: center;
+  min-height: 100%;
+  width: 100%;
+}
