@@ -6,11 +6,13 @@ import {
   ButtonScreen,
   GridScreen,
   GridSwiperScreen,
+  GlassmorphismScreen,
   CardScreen,
   CarouselScreen,
   ResponsiveCardScreen,
   TransitionFadeScreen,
-  TransitionScaleScreen
+  TransitionScaleScreen,
+  ElementsUIScreen
 } from "./page/index";
 
 export default function App() {
@@ -33,7 +35,13 @@ export default function App() {
             <Route exact path="/responsive" component={ResponsiveCardScreen} />
             <Route exact path="/fade" component={TransitionFadeScreen} />
             <Route exact path="/scale" component={TransitionScaleScreen} />
+            <Route
+              exact
+              path="/glassmorphism"
+              component={GlassmorphismScreen}
+            />
           </Switch>
+          <Route exact path="/elements_ui" component={ElementsUIScreen} />
         </div>
       </div>
     </Router>
