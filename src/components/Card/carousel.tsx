@@ -124,12 +124,10 @@ const Carousel: FC = () => {
   }
 
   window.onload = () => {
-    console.log("onload");
     setIsPortrait(setResult());
   };
 
   window.addEventListener("orientationchange", () => {
-    console.log("orientationchange");
     setIsPortrait(setResult());
   });
 
@@ -137,7 +135,7 @@ const Carousel: FC = () => {
     ? { ...settingsHorizon }
     : { ...settingsVertical };
 
-  const listItems = list.map((lists) => (
+  const listItems = list.map(() => (
     <Card className={classes.remoteCardStyle}>
       <CardContent className={classes.content}>
         <b>RemoteStream</b>

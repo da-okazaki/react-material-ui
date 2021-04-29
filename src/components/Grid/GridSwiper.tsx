@@ -124,8 +124,6 @@ const GridSwiper: FC = () => {
       <Swiper
         slidesPerView={1}
         pagination={{ clickable: true }}
-        onSwiper={(swiper) => console.log(swiper)}
-        onSlideChange={() => console.log("slide change")}
         observer={true}
         className={classes.root}
       >

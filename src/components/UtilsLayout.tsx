@@ -1,9 +1,6 @@
 import { FC } from "react";
 
 const UtilsLayout: FC = () => {
-  const handleGridLayout = () => {
-    console.log("handleGridLayout");
-  };
-  return <button onClick={() => handleGridLayout()}>Utils</button>;
+  return <button>Utils</button>;
 };
 export default UtilsLayout;

@@ -3,7 +3,7 @@ import { makeStyles, createStyles } from "@material-ui/core/styles";
 import ReactLottie from "react-lottie";
 import * as animationData from "../assets/Lottie/30331-isometric.json";
 
-const useStyles = makeStyles((theme) =>
+const useStyles = makeStyles(() =>
   createStyles({
     root: {
       display: "flex",
@@ -22,16 +22,18 @@ const useStyles = makeStyles((theme) =>
   })
 );
 
-const defaultOptions = {
-  loop: true,
-  autoplay: true,
-  animationData: animationData,
-  rendererSettings: {
-    preserveAspectRatio: "xMidYMid slice"
-  }
-};
 const Isometric: FC = () => {
   const classes = useStyles();
+
+  const defaultOptions = {
+    loop: true,
+    autoplay: true,
+    animationData: animationData,
+    rendererSettings: {
+      preserveAspectRatio: "xMidYMid slice"
+    }
+  };
+
   return (
     <div className={classes.root}>
       <div className={classes.lottieStyle}>

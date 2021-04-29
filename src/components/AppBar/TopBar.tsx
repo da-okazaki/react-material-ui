@@ -12,6 +12,11 @@ import { IconClickable } from "components/Icon/Icon";
 
 const useStyles = makeStyles((theme) =>
   createStyles({
+    root: {
+      height: "48px",
+      display: "flex",
+      justifyContent: "center"
+    },
     title: {
       flexGrow: 1,
       display: "flex",

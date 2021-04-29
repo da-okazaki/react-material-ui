@@ -5,7 +5,7 @@ import YoutubeLists from "../const/YoutubeList";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-const Image = require("../assets/Image/ai_image.jpg");
+const Image = require("../assets/image/ai_image.jpg");
 
 const settings = {
   dots: false,

@@ -3,3 +3,5 @@ export const zIndex = {
   modal: 100,
   nortification: 1000
 };
+
+export const headerHeight = 48;

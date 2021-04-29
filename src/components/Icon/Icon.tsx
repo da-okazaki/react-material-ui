@@ -15,13 +15,11 @@ const useStyles = makeStyles(() =>
     iconClickableStyle: {
       backgroundColor: "transparent",
       border: "none",
-      //color: "white",
       cursor: "pointer"
     },
     buttonStyle: {
       padding: "10px",
       appearance: "none",
-      //color: "black",
       cursor: "pointer"
     },
     disabledStyle: {
@@ -38,7 +36,6 @@ interface Props {
   outlined?: boolean;
 }
 export const Icon: FC<Props> = ({ name, iconColor, outlined }: Props) => {
-  const classes = useStyles();
   return (
     <IconComponent
       style={{ color: iconColor }}
